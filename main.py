@@ -6,7 +6,7 @@ table format [{id:,lon,lat}]
 
 217754230
 
-create shortestpath from  358665942 to 9519034907
+create shortestpath from 358665942 to 9519034907
 
 
 find restaurant from 358665942 where distance between 0 and 5

@@ -161,7 +161,16 @@ class GisDatabase:
         for i in data:
           temp.add(i['start'])
           temp.add(i['end'])
-        return list(temp)[0]
+        
+        ids = list(temp)
+        result = []
+
+        for i in ids:
+          coord = (self.graph.nodes[i]['lon'],self.graph.nodes[i]['lat'])
+          distance = haversine_distance(lat,lon,coord[1],coord[0])
+          result.append((i,distance))
+        result = sorted(result, key=lambda x: x[1])
+        return result[0][0]
 
 
     def get_by_id(self,id):
