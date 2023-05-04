@@ -22,8 +22,9 @@ find 5 {label} from [-86.8945389,40.4183154]<br>
 
 ### Start the database
 
-1.python3 main.py
-2.Enter "load file"
+1.python3 main.py <br>
+2.Enter "load file" <br>
+3.Input the osm data path, we have a test file in the data folder.
 3.Run queries
 
 ### Query examples:
