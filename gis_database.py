@@ -270,11 +270,11 @@ class GisDatabase:
           
 
       elif match_coord:
-          tag = match_id.group(1)
-          start_lon= float(match_id.group(2))
-          start_lat = float(match_id.group(3))
-          min_distance = float(match_id.group(4))
-          max_distance = float(match_id.group(5))
+          tag = match_coord.group(1)
+          start_lon= float(match_coord.group(2))
+          start_lat = float(match_coord.group(3))
+          min_distance = float(match_coord.group(4))
+          max_distance = float(match_coord.group(5))
           self.build_poi_index()
           self.range_query(tag,start_lon,start_lat,max_distance, min_distance)
       else:
