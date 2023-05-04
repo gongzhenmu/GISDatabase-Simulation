@@ -69,6 +69,8 @@ class QueryProcessor:
                             value = float(value)
                         else:
                             value = int(value)
+                        if operator == "=":
+                        	operator = "=="
                         conditions.append(lambda row, col=column, op=operator, val=value: eval(f"row[col] {op} val"))
 
                     condition = lambda row: all([cond(row) for cond in conditions])

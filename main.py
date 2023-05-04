@@ -1,7 +1,7 @@
 """/content/drive/MyDrive/CS541Project/data/West_Lafayette.osm.pbf
 
 
-/hoome/ubuntu/GISDatabase/data/West_Lafayette.osm.pbf
+/home/ubuntu/GISDatabase/data/West_Lafayette.osm.pbf
 table format [{id:,lon,lat}]
 
 217754230
